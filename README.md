@@ -16,7 +16,7 @@ Please note: Use the Chrome Browser and then F12/right click and click on 'Inspe
 A screenshot of what the portfolio would look like, once deployed, is below:
 
 
-<img src="images/Screenshot 2023-03-04 at 15.19.05.png" alt text= "screenshot of financial analysis">
+<img src="assets/images/Screenshot 2023-03-04 at 15.19.05.png" alt text= "screenshot of financial analysis">
 
 
 <br>
