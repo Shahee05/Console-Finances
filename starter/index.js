@@ -86,3 +86,34 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+// total number of months included in the dataset
+
+//array length
+
+console.log(finances.length)
+
+console.log("The total number of months included in the dataset is " + finances.length)
+
+
+//net total amount of profit/losses over the entire period
+
+
+for (var i = 0; i< finances.length; i ++) {
+
+}
+
+// average of the changes in the profit/losees over the entire period
+//track the total change in profits is from month to month and find avergae
+
+//greates increase in profits (date and amount) over the entire period
+//greatest decrease in profits (Date and amount) over the entire period 
+
+// Financial Analysis
+// ----------------------------
+// Total Months: 25
+// Total: $2561231
+// Average  Change: $-2315.12
+// Greatest Increase in Profits: Feb-2012 ($1926159)
+// Greatest Decrease in Profits: Sep-2013 ($-2196167)
