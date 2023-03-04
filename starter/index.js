@@ -88,17 +88,22 @@ var finances = [
 ];
 
 
+console.log('Financial Analysis');
+console.log("-------------------------");
+
+
 // total number of months included in the dataset
 
   // array length
-  // code: console.log(finances.length)
+  // code: 
+  var monthsTotal = (finances.length)
 
 console.log("The total number of months included in the dataset is " + finances.length);
 
 //net total amount of profit/losses over the entire period
   //add an addition assignment operater += - connects strings together
   //loop for adding all the numbers together
-  
+
 var totalAmount = 0;
 
 for (var i = 0; i < finances.length; i++) {
@@ -107,19 +112,47 @@ for (var i = 0; i < finances.length; i++) {
 }
 
 console.log('The total net amount is ' + totalAmount);
-
+  //remember to console.log outside the bracket of the formula
 
 
 // average of the changes in the profit/losees over the entire period
-//track the total change in profits is from month to month and find avergae
+    //total calculated and then work out the change by subtracting previous month from same month
+    //all changes in an array?
+   
 
-//greates increase in profits (date and amount) over the entire period
+
+  //work out the total AVERAGE
+let avgChange = 0;
+for (let i = 1; i < finances.length; i++) {
+  avgChange += finances[i][1] - finances[i - 1][1];
+}
+
+ //(Total change/months - 1)
+
+
+let total = avgChange / (finances.length - 1);
+// rounding it up to 2 decimal places
+total = total.toFixed(2);
+
+console.log('The average of the changes is ' + total)
+
+
+
+
+
+
+
+
+
+
+//greatest increase in profits (date and amount) over the entire period
+  //ifits biggerthan 0 keep track o ft eh new biigest ones
+
 //greatest decrease in profits (Date and amount) over the entire period 
 
-// Financial Analysis
-// ----------------------------
-// Total Months: 25
-// Total: $2561231
+
+
+
 // Average  Change: $-2315.12
 // Greatest Increase in Profits: Feb-2012 ($1926159)
 // Greatest Decrease in Profits: Sep-2013 ($-2196167)
