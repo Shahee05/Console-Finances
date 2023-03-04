@@ -90,19 +90,25 @@ var finances = [
 
 // total number of months included in the dataset
 
-//array length
+  // array length
+  // code: console.log(finances.length)
 
-console.log(finances.length)
-
-console.log("The total number of months included in the dataset is " + finances.length)
-
+console.log("The total number of months included in the dataset is " + finances.length);
 
 //net total amount of profit/losses over the entire period
+  //add an addition assignment operater += - connects strings together
+  //loop for adding all the numbers together
+  
+var totalAmount = 0;
 
-
-for (var i = 0; i< finances.length; i ++) {
+for (var i = 0; i < finances.length; i++) {
+  totalAmount += finances[i][1];
 
 }
+
+console.log('The total net amount is ' + totalAmount);
+
+
 
 // average of the changes in the profit/losees over the entire period
 //track the total change in profits is from month to month and find avergae
