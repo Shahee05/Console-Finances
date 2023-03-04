@@ -136,23 +136,13 @@ total = total.toFixed(2);
 
 console.log('The average of the changes is ' + total)
 
-
-
-
-
-
-
-
-
-
 //greatest increase in profits (date and amount) over the entire period
-  //ifits biggerthan 0 keep track o ft eh new biigest ones
+  
+
+
+
+  console.log('The greatest increase in profits is ' + total)
 
 //greatest decrease in profits (Date and amount) over the entire period 
 
-
-
-
-// Average  Change: $-2315.12
-// Greatest Increase in Profits: Feb-2012 ($1926159)
-// Greatest Decrease in Profits: Sep-2013 ($-2196167)
+console.log('The greatest decrease in profits is ' + total)
