@@ -24,7 +24,7 @@ A screenshot of what the portfolio would look like, once deployed, is below:
 
 ## *Link to the URL:*
 
-https://github.com/Shahee05/Console-Finances/settings/pages
+https://shahee05.github.io/Console-Finances/
 
 
 ## Credit
