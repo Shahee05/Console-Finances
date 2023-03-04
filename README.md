@@ -23,7 +23,8 @@ A screenshot of what the portfolio would look like, once deployed is below:
 
 
 ##Credit##
-Additional help was sought on W3 Schools and Stack Overflow to assist with caculations/formulas.
+Additional help was sought on Stack Overflow to assist with caculations/formulas.
+Had difficulty understanding the reduce method; however, did get a bit challenging, hence stuck to 'push' method. 
 
 ##License##
 MIT License

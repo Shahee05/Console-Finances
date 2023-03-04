@@ -115,12 +115,10 @@ console.log('The total net amount is ' + totalAmount);
   //remember to console.log outside the bracket of the formula
 
 
-// average of the changes in the profit/losees over the entire period
+// average of the changes in the profit/loses over the entire period
     //total calculated and then work out the change by subtracting previous month from same month
-    //all changes in an array?
+    //all changes in an array
    
-
-
   //work out the total AVERAGE
 let avgChange = 0;
 for (let i = 1; i < finances.length; i++) {
@@ -134,15 +132,59 @@ let total = avgChange / (finances.length - 1);
 // rounding it up to 2 decimal places
 total = total.toFixed(2);
 
-console.log('The average of the changes is ' + total)
+console.log('The average of the changes is ' + total);
 
 //greatest increase in profits (date and amount) over the entire period
+  //total for each pair and use push to add each new change value to the array
+  //add var to identify the new change (compare the difference)
+ 
+
+    //added var and tested one month on console.log before commenting it out
+    // console.log(finances[0][0]); //first element - month
+    // console.log(finances[0][1]); //amount for first month
+    // console.log(finances[1][1]); //amount for the second month
+    //therefore 
+
+    let increaseProfit = {
+      date: finances[0][0],
+      amount: finances[0][1] - finances[1][1],
+    };
+    //testing the formula from above to give the difference between the two dates
+    // console.log(increase); // -116771
+
+
+    //differentiating between date and amount so it can be included 
   
+      for (let i = 1; i < finances.length; i++) {
+        let change = finances[i][1] - finances[i - 1][1];
+        if (change > increaseProfit.amount) {
+          increaseProfit.date = finances [i] [0];
+          increaseProfit.amount = change;
+        }
+      }
 
+let changeArr = [];
+changeArr.push(increaseProfit);
 
+console.log('The Greatest Increase in profits is ' + increaseProfit.date + ': ' + increaseProfit.amount);
 
-  console.log('The greatest increase in profits is ' + total)
 
 //greatest decrease in profits (Date and amount) over the entire period 
+//similar method to above - using a new let for this block for (decreaseProfit)
 
-console.log('The greatest decrease in profits is ' + total)
+let decreaseProfit = {
+  date: finances[0][0],
+  amount: finances[0][1] - finances[1][1],
+};
+
+for (let i = 1; i < finances.length; i++) {
+  let change = finances[i][1] - finances[i - 1][1];
+  if (change < decreaseProfit.amount) {
+    decreaseProfit.date = finances[i] [0];
+    decreaseProfit.amount = change;
+  }
+}
+
+changeArr.push(decreaseProfit);
+console.log('The Greatest Increase in profits is ' + decreaseProfit.date + ': ' + decreaseProfit.amount);
+
